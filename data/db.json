@@ -1,0 +1,30 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Anna",
+      "category": "ux"
+    },
+    {
+      "id": 2,
+      "name": "Erik",
+      "category": "frontend"
+    },
+    {
+      "id": 3,
+      "name": "Sara",
+      "category": "backend"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1772146335955,
+      "title": "Test task",
+      "description": "Min första task",
+      "category": "frontend",
+      "status": "ongoing",
+      "assignedTo": 3,
+      "timestamp": "2026-02-26T22:52:15.955Z"
+    }
+  ]
+}
