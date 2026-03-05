@@ -14,35 +14,59 @@
       "id": 3,
       "name": "Sara",
       "category": "backend"
+    },
+    {
+      "id": 1772738640422,
+      "name": "salma",
+      "category": "ux"
+    },
+    {
+      "id": 1772738670141,
+      "name": "Emil",
+      "category": "ux"
+    },
+    {
+      "id": 1772738694871,
+      "name": "Boney",
+      "category": "frontend"
     }
   ],
   "assignments": [
     {
-      "id": 1772146335955,
-      "title": "Test task",
-      "description": "Min första task",
+      "id": 1772720861128,
+      "title": "java",
+      "description": "2",
       "category": "frontend",
-      "status": "done",
-      "assignedTo": 3,
-      "timestamp": "2026-02-26T22:52:15.955Z"
-    },
-    {
-      "id": 1772153796049,
-      "title": "aslama",
-      "description": "andra task",
-      "category": "frontend",
-      "status": "ongoing",
+      "status": "doing",
       "assignedTo": null,
-      "timestamp": "2026-02-27T00:56:36.049Z"
+      "timestamp": "2026-03-05T14:27:41.128Z"
     },
     {
-      "id": 1772153809673,
-      "title": "sista ",
-      "description": "java uppgift",
+      "id": 1779990000001,
+      "title": "Wireframes",
+      "description": "Skissa layout för boarden",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1772738640422,
+      "timestamp": "2026-03-05T15:00:00.000Z"
+    },
+    {
+      "id": 1779990000002,
+      "title": "API-validering",
+      "description": "Stoppa assign om category inte matchar",
+      "category": "backend",
+      "status": "new",
+      "assignedTo": null,
+      "timestamp": "2026-03-05T15:05:00.000Z"
+    },
+    {
+      "id": 1772738711104,
+      "title": "first",
+      "description": "task",
       "category": "frontend",
       "status": "new",
       "assignedTo": null,
-      "timestamp": "2026-02-27T00:56:49.673Z"
+      "timestamp": "2026-03-05T19:25:11.104Z"
     }
   ]
 }
