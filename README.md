@@ -1,17 +1,55 @@
-# Scrum Board – Backend
+# Scrum Board Backend
 
-Detta är backend-delen av Scrum board slutprojekt.
+Detta är backend-API:t för Scrum Board projektet. API:t hanterar tasks och members som används av frontend-applikationen.
 
-## 🚀 Funktioner
-- CRUD för assignments (tasks)
-- Ändra status (new → ongoing → done)
-- Tilldela medlem till task
-- Hantera members
-- JSON-databas
+## Installation
 
-## 🛠️ Tekniker
-- Node.js
-- Express
-- JSON Server / lokal JSON datalagring
+1. Klona projektet
 
-## ▶️ Starta projektet
+git clone https://github.com/salmaharastani/FE25-JS2-slutprojekt-back-salma.git
+
+2. Gå in i projektmappen
+
+cd backend
+
+3. Installera dependencies
+
+npm install
+
+## Starta utvecklingsserver
+
+npm run dev
+
+Servern startar på:
+
+http://localhost:3000
+
+## Bygga projektet för production
+
+npm run build
+
+Detta skapar en **dist-mapp** med transpilerad JavaScript-kod.
+
+## Starta production-version
+
+npm start
+
+## API Endpoints
+
+GET /assignments
+Hämtar alla tasks
+
+POST /assignments
+Skapar en ny task
+
+PATCH /assignments/:id/status
+Ändrar status på en task
+
+PATCH /assignments/:id/assign
+Tilldelar en medlem
+
+DELETE /assignments/:id
+Tar bort en task
+
+GET /members
+Hämtar alla medlemmar
