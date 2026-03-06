@@ -29,6 +29,31 @@
       "id": 1772738694871,
       "name": "Boney",
       "category": "frontend"
+    },
+    {
+      "id": 1772755096391,
+      "name": "SALMA",
+      "category": "ux"
+    },
+    {
+      "id": 1772755113009,
+      "name": "EMIL",
+      "category": "ux"
+    },
+    {
+      "id": 1772755142853,
+      "name": "EMIL",
+      "category": "frontend"
+    },
+    {
+      "id": 1772755160372,
+      "name": "Salma",
+      "category": "backend"
+    },
+    {
+      "id": 1772785711588,
+      "name": "salma",
+      "category": "frontend"
     }
   ],
   "assignments": [
@@ -37,25 +62,16 @@
       "title": "java",
       "description": "2",
       "category": "frontend",
-      "status": "doing",
+      "status": "done",
       "assignedTo": null,
       "timestamp": "2026-03-05T14:27:41.128Z"
-    },
-    {
-      "id": 1779990000001,
-      "title": "Wireframes",
-      "description": "Skissa layout för boarden",
-      "category": "ux",
-      "status": "doing",
-      "assignedTo": 1772738640422,
-      "timestamp": "2026-03-05T15:00:00.000Z"
     },
     {
       "id": 1779990000002,
       "title": "API-validering",
       "description": "Stoppa assign om category inte matchar",
       "category": "backend",
-      "status": "new",
+      "status": "done",
       "assignedTo": null,
       "timestamp": "2026-03-05T15:05:00.000Z"
     },
@@ -64,9 +80,72 @@
       "title": "first",
       "description": "task",
       "category": "frontend",
-      "status": "new",
+      "status": "doing",
       "assignedTo": null,
       "timestamp": "2026-03-05T19:25:11.104Z"
+    },
+    {
+      "id": 1772785766060,
+      "title": "test",
+      "description": "fdsfdsf",
+      "category": "frontend",
+      "status": "doing",
+      "assignedTo": null,
+      "timestamp": "2026-03-06T08:29:26.060Z"
+    },
+    {
+      "id": 1772786698344,
+      "title": "dsdada",
+      "description": "dadad",
+      "category": "ux",
+      "status": "done",
+      "assignedTo": 1,
+      "timestamp": "2026-03-06T08:44:58.344Z"
+    },
+    {
+      "id": 1772786730618,
+      "title": "dadada",
+      "description": "dada",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1,
+      "timestamp": "2026-03-06T08:45:30.618Z"
+    },
+    {
+      "id": 1772787280435,
+      "title": "task",
+      "description": "ss2",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1772738640422,
+      "timestamp": "2026-03-06T08:54:40.435Z"
+    },
+    {
+      "id": 1772787313047,
+      "title": "fdfdsf",
+      "description": "fdsfsds",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1,
+      "timestamp": "2026-03-06T08:55:13.047Z"
+    },
+    {
+      "id": 1772787319244,
+      "title": "fsdfsdfsdfsf",
+      "description": "fsfsdfsdfsd",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1772738640422,
+      "timestamp": "2026-03-06T08:55:19.244Z"
+    },
+    {
+      "id": 1772788204741,
+      "title": "jkjjkkj",
+      "description": "klklkl",
+      "category": "ux",
+      "status": "new",
+      "assignedTo": 1772738640422,
+      "timestamp": "2026-03-06T09:10:04.741Z"
     }
   ]
 }

@@ -25,7 +25,7 @@ interface Assignment {
   category: Category;
   status: Status;
   assignedTo: number | null;
-  timestamp: string; // ISO string
+  timestamp: string;
 }
 
 interface Db {
@@ -62,7 +62,7 @@ app.get("/", (_req: Request, res: Response) => {
 /** ===== MEMBERS ===== */
 app.get("/members", (_req: Request, res: Response) => {
   const db = readDb();
-  res.json(db.members);
+  return res.json(db.members);
 });
 
 app.post("/members", (req: Request, res: Response) => {
@@ -74,8 +74,11 @@ app.post("/members", (req: Request, res: Response) => {
   if (!name) {
     return res.status(400).json({ message: "name is required" });
   }
+
   if (!isCategory(category)) {
-    return res.status(400).json({ message: `category must be one of: ${CATEGORIES.join(", ")}` });
+    return res
+      .status(400)
+      .json({ message: `category must be one of: ${CATEGORIES.join(", ")}` });
   }
 
   const newMember: Member = {
@@ -93,7 +96,7 @@ app.post("/members", (req: Request, res: Response) => {
 /** ===== ASSIGNMENTS ===== */
 app.get("/assignments", (_req: Request, res: Response) => {
   const db = readDb();
-  res.json(db.assignments);
+  return res.json(db.assignments);
 });
 
 app.post("/assignments", (req: Request, res: Response) => {
@@ -106,11 +109,15 @@ app.post("/assignments", (req: Request, res: Response) => {
   if (!title) {
     return res.status(400).json({ message: "title is required" });
   }
+
   if (!description) {
     return res.status(400).json({ message: "description is required" });
   }
+
   if (!isCategory(category)) {
-    return res.status(400).json({ message: `category must be one of: ${CATEGORIES.join(", ")}` });
+    return res
+      .status(400)
+      .json({ message: `category must be one of: ${CATEGORIES.join(", ")}` });
   }
 
   const newAssignment: Assignment = {
@@ -129,9 +136,9 @@ app.post("/assignments", (req: Request, res: Response) => {
   return res.status(201).json(newAssignment);
 });
 
-/** ⭐ ASSIGN MEMBER
- * Krav: får endast tilldelas member med samma category.
- * När man assignar ska status bli "doing".
+/** ===== ASSIGN MEMBER =====
+ * Endast member med samma category får väljas.
+ * Tasken stannar kvar i "new" tills användaren klickar Move.
  */
 app.patch("/assignments/:id/assign", (req: Request, res: Response) => {
   const db = readDb();
@@ -161,13 +168,12 @@ app.patch("/assignments/:id/assign", (req: Request, res: Response) => {
   }
 
   assignment.assignedTo = member.id;
-  assignment.status = "doing";
   writeDb(db);
 
   return res.json(assignment);
 });
 
-/** ⭐ CHANGE STATUS
+/** ===== CHANGE STATUS =====
  * Tillåter bara new/doing/done
  */
 app.patch("/assignments/:id/status", (req: Request, res: Response) => {
@@ -181,7 +187,9 @@ app.patch("/assignments/:id/status", (req: Request, res: Response) => {
 
   const status = req.body?.status;
   if (!isStatus(status)) {
-    return res.status(400).json({ message: `status must be one of: ${STATUSES.join(", ")}` });
+    return res
+      .status(400)
+      .json({ message: `status must be one of: ${STATUSES.join(", ")}` });
   }
 
   assignment.status = status;
@@ -190,8 +198,8 @@ app.patch("/assignments/:id/status", (req: Request, res: Response) => {
   return res.json(assignment);
 });
 
-/** ⭐ DELETE SPECIFIC ASSIGNMENT
- * Krav: radera i done-kolumnen => vi tillåter delete bara om status är "done".
+/** ===== DELETE ASSIGNMENT =====
+ * Bara tasks med status "done" får raderas
  */
 app.delete("/assignments/:id", (req: Request, res: Response) => {
   const db = readDb();
@@ -204,25 +212,15 @@ app.delete("/assignments/:id", (req: Request, res: Response) => {
 
   const assignment = db.assignments[index];
   if (assignment.status !== "done") {
-    return res.status(400).json({ message: "Only assignments with status 'done' can be deleted" });
+    return res
+      .status(400)
+      .json({ message: "Only assignments with status 'done' can be deleted" });
   }
 
   const deleted = db.assignments.splice(index, 1)[0];
   writeDb(db);
 
   return res.json({ message: "Deleted", deleted });
-});
-
-/** ⭐ DELETE ALL ASSIGNMENTS (optional)
- * Jag hade personligen tagit bort denna innan inlämning (för säkerhet),
- * men om du vill ha kvar den går det.
- */
-app.delete("/assignments", (_req: Request, res: Response) => {
-  const db = readDb();
-  db.assignments = [];
-  writeDb(db);
-
-  return res.json({ message: "All assignments deleted" });
 });
 
 /** ===== SERVER ===== */
