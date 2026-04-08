@@ -58,94 +58,58 @@
   ],
   "assignments": [
     {
-      "id": 1772720861128,
-      "title": "java",
-      "description": "2",
+      "id": 1772792533801,
+      "title": "dasdasdsa",
+      "description": "dsadasdsa",
       "category": "frontend",
-      "status": "done",
-      "assignedTo": null,
-      "timestamp": "2026-03-05T14:27:41.128Z"
+      "status": "doing",
+      "assignedTo": 1772738694871,
+      "timestamp": "2026-03-06T10:22:13.801Z"
     },
     {
-      "id": 1779990000002,
-      "title": "API-validering",
-      "description": "Stoppa assign om category inte matchar",
+      "id": 1772794796384,
+      "title": "Create wireframes",
+      "description": "Design the layout for the scrum board",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1772755096391,
+      "timestamp": "2026-03-06T10:59:56.384Z"
+    },
+    {
+      "id": 1772794820748,
+      "title": "Setup React project",
+      "description": "Initialize project with Vite and React",
+      "category": "frontend",
+      "status": "done",
+      "assignedTo": 2,
+      "timestamp": "2026-03-06T11:00:20.748Z"
+    },
+    {
+      "id": 1772794852408,
+      "title": "Create Express API",
+      "description": "Setup basic Express server and routes",
       "category": "backend",
-      "status": "done",
-      "assignedTo": null,
-      "timestamp": "2026-03-05T15:05:00.000Z"
-    },
-    {
-      "id": 1772738711104,
-      "title": "first",
-      "description": "task",
-      "category": "frontend",
-      "status": "doing",
-      "assignedTo": null,
-      "timestamp": "2026-03-05T19:25:11.104Z"
-    },
-    {
-      "id": 1772785766060,
-      "title": "test",
-      "description": "fdsfdsf",
-      "category": "frontend",
-      "status": "doing",
-      "assignedTo": null,
-      "timestamp": "2026-03-06T08:29:26.060Z"
-    },
-    {
-      "id": 1772786698344,
-      "title": "dsdada",
-      "description": "dadad",
-      "category": "ux",
-      "status": "done",
-      "assignedTo": 1,
-      "timestamp": "2026-03-06T08:44:58.344Z"
-    },
-    {
-      "id": 1772786730618,
-      "title": "dadada",
-      "description": "dada",
-      "category": "ux",
-      "status": "doing",
-      "assignedTo": 1,
-      "timestamp": "2026-03-06T08:45:30.618Z"
-    },
-    {
-      "id": 1772787280435,
-      "title": "task",
-      "description": "ss2",
-      "category": "ux",
-      "status": "doing",
-      "assignedTo": 1772738640422,
-      "timestamp": "2026-03-06T08:54:40.435Z"
-    },
-    {
-      "id": 1772787313047,
-      "title": "fdfdsf",
-      "description": "fdsfsds",
-      "category": "ux",
-      "status": "doing",
-      "assignedTo": 1,
-      "timestamp": "2026-03-06T08:55:13.047Z"
-    },
-    {
-      "id": 1772787319244,
-      "title": "fsdfsdfsdfsf",
-      "description": "fsfsdfsdfsd",
-      "category": "ux",
-      "status": "doing",
-      "assignedTo": 1772738640422,
-      "timestamp": "2026-03-06T08:55:19.244Z"
-    },
-    {
-      "id": 1772788204741,
-      "title": "jkjjkkj",
-      "description": "klklkl",
-      "category": "ux",
       "status": "new",
-      "assignedTo": 1772738640422,
-      "timestamp": "2026-03-06T09:10:04.741Z"
+      "assignedTo": 3,
+      "timestamp": "2026-03-06T11:00:52.408Z"
+    },
+    {
+      "id": 1772794888373,
+      "title": "Fetch tasks from API\"",
+      "description": "Load tasks in frontend using fetch",
+      "category": "frontend",
+      "status": "done",
+      "assignedTo": 2,
+      "timestamp": "2026-03-06T11:01:28.373Z"
+    },
+    {
+      "id": 1772794937043,
+      "title": "Add task form",
+      "description": "Create form to add new tasks",
+      "category": "backend",
+      "status": "new",
+      "assignedTo": null,
+      "timestamp": "2026-03-06T11:02:17.043Z"
     }
   ]
 }
