@@ -89,7 +89,7 @@ app.post("/assignments", (req, res) => {
 });
 /** ===== ASSIGN MEMBER =====
  * Endast member med samma category får väljas.
- * Tasken stannar kvar i "new" tills användaren klickar Move.
+ * När en task tilldelas får den status "doing".
  */
 app.patch("/assignments/:id/assign", (req, res) => {
     const db = readDb();
