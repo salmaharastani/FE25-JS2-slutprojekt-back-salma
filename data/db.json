@@ -114,7 +114,7 @@
       "title": "Create Express API",
       "description": "Setup basic Express server and routes",
       "category": "backend",
-      "status": "new",
+      "status": "doing",
       "assignedTo": 3,
       "timestamp": "2026-03-06T11:00:52.408Z"
     },
@@ -141,8 +141,8 @@
       "title": "gtfhfghgfh",
       "description": "gdfgd",
       "category": "ux",
-      "status": "new",
-      "assignedTo": null,
+      "status": "doing",
+      "assignedTo": 1772738670141,
       "timestamp": "2026-04-08T11:49:37.910Z"
     },
     {
@@ -153,6 +153,24 @@
       "status": "new",
       "assignedTo": null,
       "timestamp": "2026-04-08T11:50:37.356Z"
+    },
+    {
+      "id": 1776284432487,
+      "title": "test",
+      "description": "test",
+      "category": "ux",
+      "status": "new",
+      "assignedTo": null,
+      "timestamp": "2026-04-15T20:20:32.487Z"
+    },
+    {
+      "id": 1776284439017,
+      "title": "task",
+      "description": "2",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1775648949923,
+      "timestamp": "2026-04-15T20:20:39.017Z"
     }
   ]
 }
