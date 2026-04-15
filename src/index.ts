@@ -168,6 +168,7 @@ app.patch("/assignments/:id/assign", (req: Request, res: Response) => {
   }
 
   assignment.assignedTo = member.id;
+  assignment.status = "doing";
   writeDb(db);
 
   return res.json(assignment);

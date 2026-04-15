@@ -114,7 +114,8 @@ app.patch("/assignments/:id/assign", (req, res) => {
         });
     }
     assignment.assignedTo = member.id;
-    writeDb(db);
+assignment.status = "doing";
+writeDb(db);
     return res.json(assignment);
 });
 /** ===== CHANGE STATUS =====
