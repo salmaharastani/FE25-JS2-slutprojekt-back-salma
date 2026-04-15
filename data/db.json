@@ -14,35 +14,145 @@
       "id": 3,
       "name": "Sara",
       "category": "backend"
+    },
+    {
+      "id": 1772738640422,
+      "name": "salma",
+      "category": "ux"
+    },
+    {
+      "id": 1772738670141,
+      "name": "Emil",
+      "category": "ux"
+    },
+    {
+      "id": 1772738694871,
+      "name": "Boney",
+      "category": "frontend"
+    },
+    {
+      "id": 1772755096391,
+      "name": "SALMA",
+      "category": "ux"
+    },
+    {
+      "id": 1772755113009,
+      "name": "EMIL",
+      "category": "ux"
+    },
+    {
+      "id": 1772755142853,
+      "name": "EMIL",
+      "category": "frontend"
+    },
+    {
+      "id": 1772755160372,
+      "name": "Salma",
+      "category": "backend"
+    },
+    {
+      "id": 1772785711588,
+      "name": "salma",
+      "category": "frontend"
+    },
+    {
+      "id": 1775648942832,
+      "name": "fdsfdsfdsf",
+      "category": "ux"
+    },
+    {
+      "id": 1775648949923,
+      "name": "fdsfds",
+      "category": "ux"
+    },
+    {
+      "id": 1775648966781,
+      "name": "safn",
+      "category": "frontend"
+    },
+    {
+      "id": 1775648986894,
+      "name": "gfgfdgfd",
+      "category": "ux"
+    },
+    {
+      "id": 1775648995736,
+      "name": "sssssssss",
+      "category": "ux"
     }
   ],
   "assignments": [
     {
-      "id": 1772146335955,
-      "title": "Test task",
-      "description": "Min första task",
+      "id": 1772792533801,
+      "title": "dasdasdsa",
+      "description": "dsadasdsa",
+      "category": "frontend",
+      "status": "doing",
+      "assignedTo": 1772738694871,
+      "timestamp": "2026-03-06T10:22:13.801Z"
+    },
+    {
+      "id": 1772794796384,
+      "title": "Create wireframes",
+      "description": "Design the layout for the scrum board",
+      "category": "ux",
+      "status": "doing",
+      "assignedTo": 1772755096391,
+      "timestamp": "2026-03-06T10:59:56.384Z"
+    },
+    {
+      "id": 1772794820748,
+      "title": "Setup React project",
+      "description": "Initialize project with Vite and React",
       "category": "frontend",
       "status": "done",
+      "assignedTo": 2,
+      "timestamp": "2026-03-06T11:00:20.748Z"
+    },
+    {
+      "id": 1772794852408,
+      "title": "Create Express API",
+      "description": "Setup basic Express server and routes",
+      "category": "backend",
+      "status": "new",
       "assignedTo": 3,
-      "timestamp": "2026-02-26T22:52:15.955Z"
+      "timestamp": "2026-03-06T11:00:52.408Z"
     },
     {
-      "id": 1772153796049,
-      "title": "aslama",
-      "description": "andra task",
+      "id": 1772794888373,
+      "title": "Fetch tasks from API\"",
+      "description": "Load tasks in frontend using fetch",
       "category": "frontend",
-      "status": "ongoing",
-      "assignedTo": null,
-      "timestamp": "2026-02-27T00:56:36.049Z"
+      "status": "done",
+      "assignedTo": 2,
+      "timestamp": "2026-03-06T11:01:28.373Z"
     },
     {
-      "id": 1772153809673,
-      "title": "sista ",
-      "description": "java uppgift",
-      "category": "frontend",
+      "id": 1772794937043,
+      "title": "Add task form",
+      "description": "Create form to add new tasks",
+      "category": "backend",
+      "status": "done",
+      "assignedTo": 3,
+      "timestamp": "2026-03-06T11:02:17.043Z"
+    },
+    {
+      "id": 1775648977910,
+      "title": "gtfhfghgfh",
+      "description": "gdfgd",
+      "category": "ux",
       "status": "new",
       "assignedTo": null,
-      "timestamp": "2026-02-27T00:56:49.673Z"
+      "timestamp": "2026-04-08T11:49:37.910Z"
+    },
+    {
+      "id": 1775649037356,
+      "title": "hhasdjkklssa",
+      "description": "213445",
+      "category": "ux",
+      "status": "new",
+      "assignedTo": null,
+      "timestamp": "2026-04-08T11:50:37.356Z"
     }
   ]
 }
